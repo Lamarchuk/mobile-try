@@ -1,0 +1,27 @@
+.input {
+  margin-bottom: 16px;
+
+  &__label {
+    display: block;
+  }
+
+  &__control {
+    width: 310px;
+    color: white;
+  }
+
+  &__control {
+    display: block;
+    margin: 0 auto;
+    padding: 18px 32px;
+    font-size: 13px;
+    line-height: 1.17;
+    border: 2px solid var(--color-fotter-rights);
+    border-radius: 32px;
+    background-color: transparent;
+  }
+
+  &::placeholder {
+    color: var(--color-description-procedure);
+  }
+}

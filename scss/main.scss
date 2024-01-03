@@ -1,0 +1,45 @@
+@import "./utils/fonts";
+
+@import "./base";
+@import "./utils/variables";
+@import "./utils/utils";
+
+/* HEADER */
+
+@import "./components/header";
+/* main-section */
+
+@import "./layouts/main-section";
+@import "./components/button";
+
+/* transformation section 2 */
+
+@import "./layouts/transformation-section";
+
+/* why container  */
+
+@import "./layouts/why-section";
+
+/* procedure  */
+
+@import "./layouts/procedure-section";
+
+@import "./components/procedure-trees";
+
+@import "./components/arrow-slide";
+
+@import "./components/pagination-pro";
+
+/* contacts  */
+
+@import "./layouts/contacts-section";
+@import "./components/forms-title";
+@import "./components/imput";
+@import "./components/form-terms";
+/* footer  */
+
+@import "./layouts/footer";
+
+/* modal  */
+
+@import "./layouts/modal";

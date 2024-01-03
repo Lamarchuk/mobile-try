@@ -1,0 +1,60 @@
+.procedure-slider {
+  overflow: hidden;
+  width: 320px;
+  margin: 0 auto 50px auto;
+  @media screen and (min-width: $bp-tablet) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 96px;
+    gap: 32px;
+    width: 100%;
+  }
+
+  &__ul {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    border-radius: 4px 120px 4px 120px;
+  }
+
+  &__cards-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    width: 320px;
+    height: 416px;
+    background: linear-gradient(
+      180.05deg,
+      rgba(1, 28, 68, 0) 48.53%,
+      rgba(1, 28, 68, 0.725825) 84.61%,
+      #011c44 101.39%
+    );
+    border-radius: 4px 120px 4px 120px;
+    @media screen and (min-width: $bp-tablet) {
+      width: 344px;
+      height: 456px;
+    }
+  }
+}
+
+.procedure-title {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 32px;
+  transition: ease 0.2s;
+}
+
+.procedure-title:hover {
+  color: var(--color-description-procedure);
+}

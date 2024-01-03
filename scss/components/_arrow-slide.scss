@@ -1,0 +1,28 @@
+.arrow-btn {
+  display: none;
+  @media screen and (min-width: $bp-tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--clor-main);
+    fill: var(--clor-main);
+    flex-shrink: 0;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+}
+
+.arrow-svg {
+  width: 16px;
+  height: 20px;
+  padding: 0;
+}
+
+.right-svg-btn {
+  display: block;
+  rotate: 180deg;
+}

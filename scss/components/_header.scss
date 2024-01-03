@@ -1,0 +1,77 @@
+.header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 106px;
+  z-index: 1;
+
+  @media screen and (min-width: $bp-tablet) {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 106px;
+    background: #ffffff40;
+    backdrop-filter: blur(5px);
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      align-items: center;
+      padding: 0 50px;
+      flex-grow: 1;
+      gap: 32px;
+    }
+  }
+
+  &__navigation {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
+      justify-content: center;
+      gap: 56px;
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__social {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__svg {
+    fill: var(--clor-main);
+    width: 32px;
+    height: 32px;
+  }
+
+  &__burger {
+    background-color: transparent;
+    border: none;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    fill: var(--color-description-procedure);
+
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
+  }
+}

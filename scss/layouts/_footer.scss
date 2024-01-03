@@ -1,0 +1,111 @@
+.footer {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background: url(./images-beauty/background.png), var(--clor-main);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 30px;
+      width: 100%;
+      max-width: 1500px;
+      height: 278px;
+      font-size: 16px;
+      padding: 0 100px;
+      align-items: center;
+      margin: 0;
+    }
+  }
+
+  &__logo {
+    margin: 20px auto 20px auto;
+    @media screen and (min-width: $bp-tablet) {
+      margin: 0;
+      position: relative;
+      top: -55px;
+    }
+  }
+
+  &__logo,
+  &__menu {
+    @media screen and (min-width: $bp-tablet) {
+      flex-grow: 1;
+    }
+  }
+
+  &__link {
+    margin-bottom: 16px;
+  }
+
+  &__links {
+    margin-bottom: 16px;
+    color: var(--color-description-procedure);
+  }
+
+  &__contacts-div,
+  &__footer-rights {
+    color: var(--color-description-procedure);
+    @media screen and (min-width: $bp-tablet) {
+      flex-grow: 1;
+    }
+  }
+
+  &__contacts-div {
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+    }
+  }
+
+  &__navigation,
+  &__address {
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      flex-grow: 1;
+      margin: 0;
+    }
+  }
+
+  &__social-svg {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 0;
+  }
+
+  &__svgfill {
+    fill: var(--color-description-procedure);
+    width: 42px;
+    height: 42px;
+  }
+
+  &__policy {
+    color: var(--color-fotter-rights);
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  &::after {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      background-image: url(./images-beauty/footer-right.png);
+      background-position: bottom right;
+      position: absolute;
+      background-repeat: no-repeat;
+      content: "";
+      width: 200px;
+      height: 250px;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}

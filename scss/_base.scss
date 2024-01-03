@@ -1,0 +1,61 @@
+*,
+* ::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  color: var(--clor-main);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  color: var(--clor-main);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.link:hover {
+  color: var(--color-hover-secondary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+.sections-title {
+  color: var(--clor-main);
+  font-weight: 700;
+  font-size: 64px;
+}
+
+.sections-title-second {
+  color: var(--color-hover-secondary);
+}
+
+.container {
+  width: 100%;
+  max-width: 1520px;
+}
+
+a {
+  display: inline-block;
+}
